@@ -24,7 +24,7 @@ class TesseractOcr():
     def tesseract_binary(self):
         # Try adb in deploy.yaml
         from module.webui.setting import State
-        file = State.deploy_config.TesseractOCR
+        file = State.deploy_config.TesseractExecutable
         file = file.replace('\\', '/')
         if os.path.exists(file):
             return os.path.abspath(file)

@@ -32,7 +32,7 @@ pycryptodome==3.9.9
 pypresence==4.2.1
 
 # Ocr
-mxnet==1.6.0
+pytesseract==0.3.10
 
 # Webui
 pywebio==1.6.2
