@@ -1,0 +1,24 @@
+# --------------------
+# Define non-modifiable values
+# --------------------
+
+# ==================== Alas ====================
+
+Restart:
+  Scheduler:
+    Enable:
+      type: state
+      value: true
+      option: [true]
+      option_bold: [true]
+    SuccessInterval: 0
+    FailureInterval: 0
+    ServerUpdate: 00:00
+
+# ==================== Daily ====================
+
+Daily:
+  Scheduler:
+    SuccessInterval: 30
+    FailureInterval: 30
+    ServerUpdate: 00:00

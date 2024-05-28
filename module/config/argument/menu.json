@@ -1,0 +1,18 @@
+{
+  "Alas": {
+    "menu": "list",
+    "page": "setting",
+    "tasks": [
+      "Alas",
+      "General",
+      "Restart"
+    ]
+  },
+  "DailyMission": {
+    "menu": "list",
+    "page": "setting",
+    "tasks": [
+      "Daily"
+    ]
+  }
+}
