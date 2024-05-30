@@ -37,12 +37,25 @@ class TesseractOcr():
         # Use adb in system PATH
         file = 'tesseract.exe'
         return file
+
+    @cached_property
+    def tesseract_tessdata_dir(self):
+        # Try adb in deploy.yaml
+        from module.webui.setting import State
+        file = State.deploy_config.TesseractTessdataDir
+        file = file.replace('\\', '/')
+        if os.path.exists(file):
+            return os.path.abspath(file)
+
+        file = 'tessdata'
+        return file
         
 
 
     def __init__(self):
         self._args = ()
         pytesseract.pytesseract.tesseract_cmd = self.tesseract_binary
+        self.tessdata_dir_config = fr'--tessdata-dir "{self.tesseract_tessdata_dir}"'
 
     def init(self):
         self
@@ -75,8 +88,7 @@ class TesseractOcr():
                 cropped = im2[y:y + h, x:x + w]
 
                 # Using tesseract on the cropped image area to get text
-                text = pytesseract.image_to_string(
-                    cropped)
+                text = pytesseract.image_to_string(cropped, lang="vie", config=self.tessdata_dir_config)
 
                 # Clean text
                 text = text.replace("\n", " ").replace("  ", " ").strip()

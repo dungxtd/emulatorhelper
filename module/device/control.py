@@ -37,9 +37,9 @@ class Control(Hermit, Minitouch, Scrcpy, MaaTouch, NemuIpc):
             self.handle_control_check(button)
         x, y = random_rectangle_point(button.button)
         x, y = ensure_int(x, y)
-        logger.info(
-            'Click %s @ %s' % (point2str(x, y), button)
-        )
+        # logger.info(
+        #     'Click %s @ %s' % (point2str(x, y), button)
+        # )
         method = self.click_methods.get(
             self.config.Emulator_ControlMethod,
             self.click_adb
@@ -68,9 +68,9 @@ class Control(Hermit, Minitouch, Scrcpy, MaaTouch, NemuIpc):
         x, y = random_rectangle_point(button.button)
         x, y = ensure_int(x, y)
         duration = ensure_time(duration)
-        logger.info(
-            'Click %s @ %s, %s' % (point2str(x, y), button, duration)
-        )
+        # logger.info(
+        #     'Click %s @ %s, %s' % (point2str(x, y), button, duration)
+        # )
         method = self.config.Emulator_ControlMethod
         if method == 'minitouch':
             self.long_click_minitouch(x, y, duration)

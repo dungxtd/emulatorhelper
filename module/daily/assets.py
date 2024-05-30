@@ -7,3 +7,4 @@ from module.base.template import Template
 MEMBER = Button(area={'en': (127, 225, 662, 444)}, color={'en': (94, 132, 164)}, button={'en': (0, 0, 300, 300)})
 APPROVE = Button(area={'en': (552, 247, 670, 307)}, color={'en': (94, 132, 164)}, button={'en': (552, 247, 670, 307)})
 REJECT = Button(area={'en': (415, 247, 529, 307)}, color={'en': (94, 132, 164)}, button={'en': (415, 247, 529, 307)})
+RANDOM = Button(area={'en': (520, 137, 691, 193)}, color={'en': (94, 132, 164)}, button={'en': (520, 137, 691, 193)})

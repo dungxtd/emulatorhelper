@@ -66,6 +66,7 @@ class ConfigModel:
 
     #Tesseract-OCR
     TesseractExecutable: str = "./toolkit/Tesseract-OCR/tesseract.exe"
+    TesseractTessdataDir: str = "./toolkit/Tesseract-OCR/tessdata"
 
 
 class DeployConfig(ConfigModel):
@@ -189,6 +190,6 @@ class DeployConfig(ConfigModel):
         logger.info(f"Last command: {command}")
         logger.info(
             "Please check your deploy settings in config/deploy.yaml "
-            "and re-open Alas.exe"
+            "and re-open EmulatorHelper.exe"
         )
         logger.info("Take the screenshot of entire window if you need help")

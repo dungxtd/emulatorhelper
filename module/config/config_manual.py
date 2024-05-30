@@ -9,8 +9,7 @@ class ManualConfig:
         return server.server
 
     SCHEDULER_PRIORITY = """
-    Restart
-    > Daily
+    Daily
     """
 
     """

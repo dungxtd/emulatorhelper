@@ -160,3 +160,4 @@ Deploy:
     # Filepath of python executable `python.exe`
     # [Easy installer] Use './toolkit/python.exe'
     TesseractExecutable: ./toolkit/Tesseract-OCR/tesseract.exe
+    TesseractTessdataDir: ./toolkit/Tesseract-OCR/tessdata
