@@ -506,7 +506,13 @@ pre.rich-traceback-code {
 *[style*="--loading-border--"] {
   width: 1.5rem;
   height: 1.5rem;
-  border: 0.2em solid currentColor;
+  /* border: 0.2em solid currentColor; */
+  border-right-color: transparent;
+}
+
+*[style*="--loading-border--"] > div {
+  width: 1.5rem;
+  height: 1.5rem;
   border-right-color: transparent;
 }
 
@@ -514,4 +520,17 @@ pre.rich-traceback-code {
   width: 1.5rem;
   height: 1.5rem;
   border: 0.2em solid currentColor;
+}
+
+*[style*="--loading-border-fill--"] > div {
+  display: none;
+}
+
+*[style*="--loading-border-fill--"] > div {
+  display: none;
+}
+
+*[style*="--loading-grow--"] > div {
+  width: 1.5rem;
+  height: 1.5rem;
 }
