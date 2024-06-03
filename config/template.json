@@ -1344,22 +1344,7 @@
       "FailureInterval": 30,
       "ServerUpdate": "00:00"
     },
-    "Daily": {
-      "UseDailySkip": true,
-      "EscortMission": "first",
-      "EscortMissionFleet": 1,
-      "AdvanceMission": "first",
-      "AdvanceMissionFleet": 1,
-      "FierceAssault": "first",
-      "FierceAssaultFleet": 1,
-      "TacticalTraining": "second",
-      "TacticalTrainingFleet": 1,
-      "SupplyLineDisruption": "second",
-      "ModuleDevelopment": "first",
-      "ModuleDevelopmentFleet": 1,
-      "EmergencyModuleDevelopment": "first",
-      "EmergencyModuleDevelopmentFleet": 1
-    },
+    "Daily": {},
     "Storage": {
       "Storage": {}
     }

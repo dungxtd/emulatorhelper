@@ -27,9 +27,6 @@ Emulator:
   PackageName:
     value: auto
     option: [auto]
-  ServerName:
-    value: disabled
-    option: [disabled]
   ScreenshotMethod:
     value: auto
     option: [auto, ADB, ADB_nc, uiautomator2, aScreenCap, aScreenCap_nc, DroidCast, DroidCast_raw, scrcpy, nemu_ipc]
@@ -65,28 +62,6 @@ Optimization:
     option: [stay_there, goto_main, close_game]
 DropRecord:
   SaveFolder: ./screenshots
-  AzurStatsID: null
-  API:
-    value: default
-    option: [default, cn_gz_reverse_proxy]
-  ResearchRecord:
-    value: do_not
-    option: [do_not, save, upload, save_and_upload]
-  CommissionRecord:
-    value: do_not
-    option: [do_not, save, upload, save_and_upload]
-  CombatRecord:
-    value: do_not
-    option: [do_not, save]
-  OpsiRecord:
-    value: do_not
-    option: [do_not, save, upload, save_and_upload]
-  MeowfficerBuy:
-    value: do_not
-    option: [do_not, save]
-  MeowfficerTalent:
-    value: do_not
-    option: [do_not, save, upload, save_and_upload]
 Retirement:
   RetireMode:
     value: one_click_retire
@@ -95,82 +70,7 @@ OneClickRetire:
   KeepLimitBreak:
     value: keep_limit_break
     option: [keep_limit_break, do_not_keep]
-Enhance:
-  ShipToEnhance:
-    value: all
-    option: [all, favourite]
-  Filter:
-  CheckPerCategory: 5
-OldRetire:
-  N: true
-  R: true
-  SR: false
-  SSR: false
-  RetireAmount:
-    value: retire_all
-    option: [retire_all, retire_10]
 
 # ==================== Daily ====================
 
 Daily:
-  UseDailySkip: true
-  EscortMission:
-    value: first
-    option: [skip, first, second, third]
-  EscortMissionFleet:
-    value: 1
-    option: [1, 2, 3, 4, 5, 6]
-  AdvanceMission:
-    value: first
-    option: [skip, first, second, third]
-  AdvanceMissionFleet:
-    value: 1
-    option: [1, 2, 3, 4, 5, 6]
-  FierceAssault:
-    value: first
-    option: [skip, first, second, third]
-  FierceAssaultFleet:
-    value: 1
-    option: [1, 2, 3, 4, 5, 6]
-  TacticalTraining:
-    value: second
-    option: [skip, first, second, third]
-  TacticalTrainingFleet:
-    value: 1
-    option: [1, 2, 3, 4, 5, 6]
-  SupplyLineDisruption:
-    value: second
-    option: [skip, first, second, third]
-  ModuleDevelopment:
-    value: first
-    option: [skip, first, second]
-  ModuleDevelopmentFleet:
-    value: 1
-    option: [1, 2, 3, 4, 5, 6]
-  EmergencyModuleDevelopment:
-    value: first
-    option: [skip, first, second]
-  EmergencyModuleDevelopmentFleet:
-    value: 1
-    option: [1, 2, 3, 4, 5, 6]
-Hard:
-  HardStage: 11-4
-  HardFleet:
-    value: 1
-    option: [1, 2]
-Exercise:
-  OpponentChooseMode:
-    value: max_exp
-    option: [max_exp, easiest, leftmost, easiest_else_exp]
-  OpponentTrial: 1
-  ExerciseStrategy:
-    value: aggressive
-    option: [aggressive, fri18, sat0, sat12, sat18, sun0, sun12, sun18]
-  LowHpThreshold: 0.4
-  LowHpConfirmWait: 0.1
-  OpponentRefreshValue: 0
-  OpponentRefreshRecord: 2020-01-01 00:00:00
-Sos:
-  Chapter:
-    value: 3
-    option: [3, 4, 5, 6, 7, 8, 9, 10]

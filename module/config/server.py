@@ -1,12 +1,11 @@
 """
-This file stores server, such as 'cn', 'en'.
+This file stores server, such as 'vi', 'en'.
 Use 'import module.config.server as server' to import, don't use 'from xxx import xxx'.
 """
 server = 'en'
 
 VALID_SERVER = ['en']
 VALID_PACKAGE = {
-    'com.game.android.xpoker': 'en',
 }
 VALID_CHANNEL_PACKAGE = {
 }
